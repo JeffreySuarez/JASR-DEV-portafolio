@@ -1,0 +1,10 @@
+.navbar{
+text-decoration: none;
+color: white;
+
+}
+
+.active{
+   color: #F70838;
+   font-weight: bold;
+}
