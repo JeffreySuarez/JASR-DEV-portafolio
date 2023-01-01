@@ -10,6 +10,5 @@ const ContainerResume = styled.div`
   align-items: center;
   color: white;
   margin-top: 100px;
-  height: 600px;
 `;
 export default Resume;

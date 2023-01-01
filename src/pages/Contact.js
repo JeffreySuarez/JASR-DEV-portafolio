@@ -1,7 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 const Contact = () => {
-  return <ContainerContact>Contact</ContainerContact>;
+  return (
+    <ContainerContact>
+      <h1>Contact</h1>
+    </ContainerContact>
+  );
 };
 const ContainerContact = styled.div`
   display: flex;
@@ -10,6 +14,5 @@ const ContainerContact = styled.div`
   align-items: center;
   color: white;
   margin-top: 100px;
-  height: 600px;
 `;
 export default Contact;

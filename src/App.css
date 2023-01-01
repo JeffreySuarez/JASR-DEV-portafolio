@@ -1,27 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-.App{
+.App {
+  width: 100%;
+  display: flex;
 
-width: 100%;
-display: flex;
-justify-content: center;
-background-color: #202020;
-font-family: 'Roboto', sans-serif;
-
-
-
+  justify-content: center;
+  background-color: #202020;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
-.color1 {color: #060608;}
-.color2 {color: #202020;}
-.color3 {color: #37353f;}
-.color4 {color: #555161;}
-.color5 {color: #787680;}
+.color1 {
+  color: #060608;
+}
+.color2 {
+  color: #202020;
+}
+.color3 {
+  color: #37353f;
+}
+.color4 {
+  color: #555161;
+}
+.color5 {
+  color: #787680;
+}

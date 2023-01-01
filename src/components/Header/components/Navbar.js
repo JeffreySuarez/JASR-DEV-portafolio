@@ -8,16 +8,19 @@ const Navbar = () => {
   return (
     <ContainerNavbar>
       <UL>
-        <NavLink to="/home" activeClassName="active" className="navbar">
+        <NavLink to="/" activeClassName="active" className="navbar">
           HOME
         </NavLink>
-        <NavLink
+        {/* <NavLink
           exact
           to="/services"
           activeClassName="active"
           className="navbar"
         >
           SERVICES
+        </NavLink> */}
+        <NavLink exact to="/resume" activeClassName="active" className="navbar">
+          RESUME
         </NavLink>
         <NavLink
           exact
@@ -25,11 +28,9 @@ const Navbar = () => {
           activeClassName="active"
           className="navbar"
         >
-          PORTFOLIO
+          PROJECTS
         </NavLink>
-        <NavLink exact to="/resume" activeClassName="active" className="navbar">
-          RESUME
-        </NavLink>
+
         <NavLink
           exact
           to="/contact"
@@ -39,7 +40,7 @@ const Navbar = () => {
           CONTACT
         </NavLink>
         <NavLink exact to="/blog" activeClassName="active" className="navbar">
-          BLOG
+          MY BLOG
         </NavLink>
       </UL>
     </ContainerNavbar>

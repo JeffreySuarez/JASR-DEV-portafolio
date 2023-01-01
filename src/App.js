@@ -22,13 +22,13 @@ const App = () => {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Layout />}>
-          <Route index exact path="/Home" element={<Home />} />
+          <Route index exact path="/" element={<Home />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/blog" element={<LayoutBlog />}>
-            <Route exact path="/blog/htm/" element={<Html />} />
+            <Route exact path="/blog/html" element={<Html />} />
             <Route exact path="/blog/css" element={<Css />} />
             <Route exact path="/blog/javascript" element={<JavaScript />} />
             <Route exact path="/blog/reactjs" element={<ReactJs />} />
