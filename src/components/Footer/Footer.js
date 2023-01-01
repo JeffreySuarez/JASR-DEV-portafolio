@@ -11,7 +11,10 @@ const Footer = () => {
         <Spansub>{"_"}</Spansub> <SpanTitulo>JASR-DEV</SpanTitulo>
       </Titulo>
       <ContainerIconos>
-        <Link to="https://www.facebook.com/settings?tab=account&section=username">
+        <Link
+          to="https://www.facebook.com/settings?tab=account&section=username"
+          target="_blank"
+        >
           <Icono>
             <i class="fab fa-facebook-f"></i>
           </Icono>
