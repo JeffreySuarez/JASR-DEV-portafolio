@@ -21,8 +21,8 @@ const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/home" element={<Layout />}>
-          <Route index exact path="/home" element={<Home />} />
+        <Route exact path="/" element={<Layout />}>
+          <Route index exact path="/" element={<Home />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
           <Route exact path="/resume" element={<Resume />} />
