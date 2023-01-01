@@ -12,7 +12,7 @@ import Contact from "./pages/Contact";
 import JavaScript from "./pages/pages-blog/JavaScript";
 import LayoutBlog from "./components/Layout/LayoutBlog";
 import Css from "./pages/pages-blog/Css";
-import Html from "./pages/pages/blog/Html";
+import Html from "./pages/pages-blog/Html";
 import ReactJs from "./pages/pages-blog/ReactJs";
 import NodeJs from "./pages/pages-blog/NodeJs";
 import DB from "./pages/pages-blog/DB";
