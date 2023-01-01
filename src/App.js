@@ -9,26 +9,26 @@ import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 
-import JavaScript from "./pages/JavaScript";
+import JavaScript from "./pages/pages-blog/JavaScript";
 import LayoutBlog from "./components/Layout/LayoutBlog";
-import Css from "./pages/Css";
-import Html from "./pages/Html";
-import ReactJs from "./pages/ReactJs";
-import NodeJs from "./pages/NodeJs";
-import DB from "./pages/DB";
+import Css from "./pages/pages-blog/Css";
+import Html from "./pages/pages/blog/Html";
+import ReactJs from "./pages/pages-blog/ReactJs";
+import NodeJs from "./pages/pages-blog/NodeJs";
+import DB from "./pages/pages-blog/DB";
 
 const App = () => {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<Layout />}>
+        <Route exact path="/home" element={<Layout />}>
           <Route index exact path="/home" element={<Home />} />
           <Route exact path="/services" element={<Services />} />
           <Route exact path="/portfolio" element={<Portfolio />} />
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/blog" element={<LayoutBlog />}>
-            <Route exact path="/blog/html" element={<Html />} />
+            <Route exact path="/blog/htm/" element={<Html />} />
             <Route exact path="/blog/css" element={<Css />} />
             <Route exact path="/blog/javascript" element={<JavaScript />} />
             <Route exact path="/blog/reactjs" element={<ReactJs />} />
