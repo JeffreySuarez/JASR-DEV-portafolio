@@ -16,7 +16,7 @@ const Layout = () => {
 const ContainerLayout = styled.div`
   background-color: #202020;
   width: 90%;
-  height: 600px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
