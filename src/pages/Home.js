@@ -1,22 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import { HomeComponent } from "../components/HomeComponent/HomeComponent";
 
 const Home = () => {
   return (
     <ContainerHome>
-      <div>
-        <h2>
-          Hello, <span>I´m</span>
-        </h2>
-      </div>
-      <div></div>
+      <HomeComponent />
     </ContainerHome>
   );
 };
 
 const ContainerHome = styled.div`
   display: flex;
-  font-size: 50px;
+
   justify-content: center;
   align-items: center;
   color: white;

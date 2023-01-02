@@ -20,18 +20,43 @@ const Footer = () => {
             <i class="fab fa-facebook-f"></i>
           </Icono>
         </a>
-        <Icono>
-          <i class="fab fa-linkedin-in"></i>
-        </Icono>
-        <Icono>
-          <i class="fab fa-instagram"></i>
-        </Icono>
-        <Icono>
-          <i class="fab fa-github"></i>
-        </Icono>
-        <Icono>
-          <i class="fab fa-twitter"></i>
-        </Icono>
+        <a
+          href="https://www.linkedin.com/in/jeffrey-alexander-suarez-rey-9bb8046b"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icono>
+            <i class="fab fa-linkedin-in"></i>
+          </Icono>
+        </a>
+        <a
+          href="https://www.instagram.com/jeffreysuarezrey/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icono>
+            <i class="fab fa-instagram"></i>
+          </Icono>
+        </a>
+        <a
+          href="https://github.com/JeffreySuarez"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icono>
+            <i class="fab fa-github"></i>
+          </Icono>
+        </a>
+
+        <a
+          href="https://twitter.com/jeffreysuarezr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icono>
+            <i class="fab fa-twitter"></i>
+          </Icono>
+        </a>
       </ContainerIconos>
       <P>2022 &copy; Rights Reserved By JASR-DEV</P>
     </ContainerFooter>
@@ -48,6 +73,10 @@ const ContainerFooter = styled.div`
 `;
 const ContainerIconos = styled.div`
   display: flex;
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 const Icono = styled.button`
@@ -107,5 +136,9 @@ const Spansub = styled.span`
     }
   }
 `;
+
+// const linkRedSocial = styled.a`
+//   list-stile: none;
+// `;
 
 export default Footer;

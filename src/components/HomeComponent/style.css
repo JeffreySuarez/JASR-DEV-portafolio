@@ -1,0 +1,44 @@
+.imagen {
+  background-image: url(../../assets/img/foto.png);
+  background-repeat: none;
+  background-size: cover;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+}
+
+.contenedorHome {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  width: 100%;
+
+  color: #d7dae3;
+}
+
+.textoHome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span {
+  color: #f70838;
+}
+
+/* color: #d7dae3; */
+
+.nombre {
+  font-size: 50px;
+  color: white;
+}
+
+.nombreProfesion {
+  font-size: 40px;
+}
+p {
+  font-size: 20px;
+}
