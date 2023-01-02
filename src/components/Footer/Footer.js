@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 const Footer = () => {
@@ -11,14 +11,15 @@ const Footer = () => {
         <Spansub>{"_"}</Spansub> <SpanTitulo>JASR-DEV</SpanTitulo>
       </Titulo>
       <ContainerIconos>
-        <Link
-          to="https://www.facebook.com/settings?tab=account&section=username"
+        <a
+          href="https://www.facebook.com/jeffrey.suarez.9849"
           target="_blank"
+          rel="noreferrer"
         >
           <Icono>
             <i class="fab fa-facebook-f"></i>
           </Icono>
-        </Link>
+        </a>
         <Icono>
           <i class="fab fa-linkedin-in"></i>
         </Icono>
