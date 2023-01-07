@@ -31,11 +31,11 @@ const NavbarBlog = () => {
 
   const valor = {
     // height: `${divHeight}px`,
-    height: "100px",
+    height: "10rem",
   };
   const valor1 = {
     // height: `${divHeight}px`,
-    height: "0px",
+    height: "0rem",
   };
 
   // if (toggle) {
@@ -181,7 +181,7 @@ const ListItem = styled.div`
 const ListButton = styled.div`
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 10px;
   width: 70%;
   margin: 0 auto;
 `;

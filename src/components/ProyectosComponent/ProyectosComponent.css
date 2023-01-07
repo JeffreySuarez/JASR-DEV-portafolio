@@ -1,0 +1,190 @@
+.contenido-proyecto {
+  text-align: center;
+}
+
+.contenido-proyecto .titulo h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+
+.proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.proyecto-item {
+  position: relative;
+  border: none;
+  border-radius: 15px;
+}
+
+/* imagenes de los proyectos en background */
+/* ================================================== */
+
+.proyecto-imagen1 {
+  border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url("../../assets/img/tiendamuebles.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proyecto-imagen2 {
+  border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url("../../assets/img/itcapture.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proyecto-imagen3 {
+  border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url("../../assets/img/portafolio.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.proyecto-imagen4 {
+  border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  background-image: url("../../assets/img/coderfilm.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.proyecto-imagen5 {
+  border: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background-image: url("../../assets/img/portafolio.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.proyecto-imagen6 {
+  border: none;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+  background-image: url("../../assets/img/portafolio.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* ========================================================= */
+
+.hover-proyecto-item {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 15px;
+  display: flex;
+  opacity: 0;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.proyecto-item .hover-proyecto-item:hover {
+  opacity: 1;
+  background-color: #f70838;
+}
+
+.hover-proyecto-item h3 {
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.proyecto-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto-icons .icon {
+  background-color: #202020;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0px 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.proyecto-icons .icon i {
+  font-size: 30px;
+  color: white;
+}
+
+.proyecto-icons .icon i:hover {
+  color: #f70838;
+}
+.proyecto-icons .icon:hover {
+  background-color: white;
+}
+/*  
+
+    
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon{
+          
+            background-color: var(--color-primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1rem;
+            cursor: pointer;
+            transition: all .4s ease-in-out;
+            i{
+                font-size: 1.5rem;
+                color: var(--color-white);
+                margin: 0 1rem;
+            }
+            &:hover{
+                background-color: var(--color-white);
+                i{
+                    color: var(--color-black);
+                }
+            }
+        }
+    }   
+}
+}
+.portfolio-item:hover .hover-item{
+opacity: 1;
+transform: scale(1);
+}
+} */

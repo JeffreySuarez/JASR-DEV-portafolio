@@ -27,9 +27,10 @@ const ContainerHeader = styled.div`
   align-items: center;
   position: fixed;
 
-  left: 5px;
+  left: -1px;
   z-index: 99;
-  background-color: #202020;
+  /* background-color: #202020; */
+  background-color: #060608;
 `;
 
 const ContainerLogo = styled.div`

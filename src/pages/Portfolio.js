@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+import { ProyectosComponent } from "../components/ProyectosComponent/ProyectosComponent";
 const Portfolio = () => {
-  return <ContainerPortfolio>Portfolio</ContainerPortfolio>;
+  return (
+    <ContainerPortfolio>
+      <ProyectosComponent />
+    </ContainerPortfolio>
+  );
 };
 const ContainerPortfolio = styled.div`
   display: flex;

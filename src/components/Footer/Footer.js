@@ -95,7 +95,7 @@ const Icono = styled.button`
 `;
 
 const Separador = styled.div`
-  height: 1px;
+  height: 2px;
   width: 100%;
   background: #4e5460;
   margin-top: 30px;

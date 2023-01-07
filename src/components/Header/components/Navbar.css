@@ -1,10 +1,11 @@
-.navbar{
-text-decoration: none;
-color: white;
-
+.navbar {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 0px 20px;
 }
 
-.active{
-   color: #F70838;
-   font-weight: bold;
+.active {
+  color: #f70838;
+  font-weight: bold;
 }

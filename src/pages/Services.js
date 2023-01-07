@@ -5,11 +5,11 @@ const Services = () => {
 };
 const ContainerServices = styled.div`
   display: flex;
-  font-size: 50px;
+  font-size: 5rem;
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 100px;
+  margin-top: 10rem;
 `;
 
 export default Services;

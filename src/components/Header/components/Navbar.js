@@ -19,16 +19,16 @@ const Navbar = () => {
         >
           SERVICES
         </NavLink> */}
-        <NavLink exact to="/resume" activeClassName="active" className="navbar">
-          RESUME
-        </NavLink>
+        {/* <NavLink exact to="/resume" activeClassName="active" className="navbar">
+          RESUMEN
+        </NavLink> */}
         <NavLink
           exact
           to="/portfolio"
           activeClassName="active"
           className="navbar"
         >
-          PROJECTS
+          PROYECTOS
         </NavLink>
 
         <NavLink
@@ -37,11 +37,11 @@ const Navbar = () => {
           activeClassName="active"
           className="navbar"
         >
-          CONTACT
+          CONTACTO
         </NavLink>
-        <NavLink exact to="/blog" activeClassName="active" className="navbar">
-          MY BLOG
-        </NavLink>
+        {/* <NavLink exact to="/blog" activeClassName="active" className="navbar">
+          MI BLOG
+        </NavLink> */}
       </UL>
     </ContainerNavbar>
   );
@@ -51,7 +51,7 @@ const ContainerNavbar = styled.div``;
 
 const UL = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   font-weight: bold;
 `;
 

@@ -1,11 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import { SobreMiComponent } from "../components/SobreMiComponent/SobreMiComponent";
 const Resume = () => {
-  return <ContainerResume>Resume</ContainerResume>;
+  return (
+    <ContainerResume>
+      <SobreMiComponent />
+    </ContainerResume>
+  );
 };
 const ContainerResume = styled.div`
   display: flex;
-  font-size: 50px;
+
   justify-content: center;
   align-items: center;
   color: white;

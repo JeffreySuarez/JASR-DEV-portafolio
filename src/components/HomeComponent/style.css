@@ -1,11 +1,23 @@
 .imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido-imagen {
   background-image: url(../../assets/img/foto.png);
   background-repeat: none;
   background-size: cover;
   filter: grayscale(100%);
+  border: 10px solid black;
   border-radius: 50%;
-  width: 25rem;
-  height: 25rem;
+  width: 350px;
+  height: 350px;
+  transition: all 0.5s ease-in-out;
+}
+
+.contenido-imagen:hover {
+  filter: grayscale(0);
 }
 
 .contenedorHome {
@@ -13,10 +25,11 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  gap: 20px;
   width: 100%;
 
   color: #d7dae3;
+  margin-bottom: 80px;
 }
 
 .textoHome {
@@ -41,4 +54,5 @@ span {
 }
 p {
   font-size: 20px;
+  letter-spacing: 1px;
 }
