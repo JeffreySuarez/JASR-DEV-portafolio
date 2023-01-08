@@ -1,5 +1,6 @@
 import React from "react";
 import "./SobreMiComponent.css";
+import Certificado1 from "../.././assets/doc/DesarrolloWebCoderhouse.png";
 
 export const SobreMiComponent = () => {
   return (
@@ -80,12 +81,7 @@ export const SobreMiComponent = () => {
             Se adquirio los conocimientos de html, css, sass, bootstrap, git,
             github, durante 10 semanas con clases sincronicas. En la escuela
             digital CODERHOUSE 100% online.{" "}
-            <a
-              className="certificado"
-              href="CVjeffrey.docx"
-              rel="noreferrer"
-              download="Curriculum Vitae Jeffrey Suarez"
-            >
+            <a className="certificado" href={Certificado1} target="_blank">
               Ver certificado
             </a>
           </p>
