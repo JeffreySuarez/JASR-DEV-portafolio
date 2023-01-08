@@ -100,7 +100,7 @@
 .timeline {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   padding-bottom: 30px;
   width: 90%;
 }
@@ -109,19 +109,43 @@
   position: relative;
   left: -27px;
   padding-left: 30px;
-  border-left: 1px solid #787680;
+  border-left: 2px solid #787680;
+  background-color: #37363f;
+  border-radius: 0px 10px 10px 10px;
+  padding: 30px;
+  box-shadow: 13px 13px 16px -3px rgba(0, 0, 0, 0.47);
 }
 .timeline-item p {
   text-align: justify;
 }
 
+.certificado {
+  text-decoration: none;
+  color: #f70838;
+  font-style: italic;
+  font-size: 15px;
+}
+.certificado:hover {
+  text-decoration: underline;
+}
+
+.botonCertificado {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #202020;
+  color: #f70838;
+  border: 2px solid #f70838;
+  cursor: pointer;
+}
+
 .tl-icon {
   position: absolute;
-  left: -20px;
-  top: -5px;
+  left: -27px;
+  top: -25px;
   background-color: #f70838;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -130,7 +154,7 @@
 
 .tl-duration {
   padding: 4px 10px;
-  background-color: #37363f;
+  background-color: #202020;
   border-radius: 15px;
   display: inline-block;
   font-size: 15px;

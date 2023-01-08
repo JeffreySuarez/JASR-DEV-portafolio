@@ -79,8 +79,17 @@ export const SobreMiComponent = () => {
           <p>
             Se adquirio los conocimientos de html, css, sass, bootstrap, git,
             github, durante 10 semanas con clases sincronicas. En la escuela
-            digital CODERHOUSE 100% online.
+            digital CODERHOUSE 100% online.{" "}
+            <a
+              className="certificado"
+              href="CVjeffrey.docx"
+              rel="noreferrer"
+              download="Curriculum Vitae Jeffrey Suarez"
+            >
+              Ver certificado
+            </a>
           </p>
+          {/* <button className="botonCertificado">Ver certificado</button> */}
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
