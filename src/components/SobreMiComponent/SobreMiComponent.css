@@ -83,7 +83,7 @@
 .contenedorI {
   text-align: center;
 
-  background-color: #f70838;
+  background-color: #ff7e00;
   margin-right: 10px;
 }
 
@@ -121,7 +121,7 @@
 
 .certificado {
   text-decoration: none;
-  color: #f70838;
+  color: #ff7e00;
   font-style: italic;
   font-size: 15px;
 }
@@ -134,8 +134,8 @@
   padding: 5px;
   font-size: 15px;
   background-color: #202020;
-  color: #f70838;
-  border: 2px solid #f70838;
+  color: #ff7e00;
+  border: 2px solid #787680;
   cursor: pointer;
 }
 

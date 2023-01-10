@@ -1,6 +1,14 @@
 import React from "react";
 import "./SobreMiComponent.css";
 import Certificado1 from "../.././assets/doc/DesarrolloWebCoderhouse.png";
+import Certificado2 from "../.././assets/doc/javascriptCoderhouse.png";
+import Certificado3 from "../../assets/doc/Api-rest.png";
+import Certificado4 from "../../assets/doc/diploma-frontend-developer.pdf";
+import Certificado5 from "../../assets/doc/diploma-frontend-developer-practico.pdf";
+import Certificado6 from "../../assets/doc/Curso Profesional de JavaScript.pdf";
+import Certificado7 from "../../assets/doc/cursoDeProgramacionOrientadaAobjetos.pdf";
+import Certificado8 from "../../assets/doc/cursoProfesionalDeReact.pdf";
+import Certificado9 from "../../assets/doc/React.png";
 
 export const SobreMiComponent = () => {
   return (
@@ -81,11 +89,15 @@ export const SobreMiComponent = () => {
             Se adquirio los conocimientos de html, css, sass, bootstrap, git,
             github, durante 10 semanas con clases sincronicas. En la escuela
             digital CODERHOUSE 100% online.{" "}
-            <a className="certificado" href={Certificado1} target="_blank">
+            <a
+              className="certificado"
+              href={Certificado1}
+              target="_blank"
+              rel="noreferrer"
+            >
               Ver certificado
             </a>
           </p>
-          {/* <button className="botonCertificado">Ver certificado</button> */}
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -101,6 +113,14 @@ export const SobreMiComponent = () => {
             less, flexbox, css grid y bootstrap, tecnologías orientadas al
             diseño web.
           </p>
+          <a
+            className="certificado"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-bc747765-8238-461f-ae46-691d77940a8b.jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -115,6 +135,14 @@ export const SobreMiComponent = () => {
             en los buscadores, consiguiendo más vistas, más tráfico, más
             visibilidad y relevancia en internet.
           </p>
+          <a
+            className="certificado"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-c45d0c85-de1d-42e0-b9ee-171532eeee19.jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -128,6 +156,14 @@ export const SobreMiComponent = () => {
             En este curso se profundizo con las skill de html, css y bootstrap
             creando proyectos con la filosofía de "Mobile First".
           </p>
+          <a
+            className="certificado"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-dd2ced02-0a0a-4998-9809-0f16b3a3a370.jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -142,6 +178,14 @@ export const SobreMiComponent = () => {
             programacion javascript, durante 8 semanas con clases sincronicas.
             En la escuela digital CODERHOUSE 100% online.
           </p>
+          <a
+            className="certificado"
+            href={Certificado2}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -160,6 +204,14 @@ export const SobreMiComponent = () => {
             dispositivo electronico IoT, donde enviara informacion de sus
             sensores a la plataforma por medio del protocolo MQTT.
           </p>
+          <a
+            className="certificado"
+            href="https://drive.google.com/file/d/1sUAZN8s3bGzEf8wYcRDveCBIeUmXcEQ3/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -173,6 +225,14 @@ export const SobreMiComponent = () => {
             En este curso, se refuerzan los conceptos básicos del lenguaje de
             programación javascript.
           </p>
+          <a
+            className="certificado"
+            href="https://platzi.com/p/jrdeveloper21/curso/1814-course/diploma/detalle/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -186,6 +246,14 @@ export const SobreMiComponent = () => {
             En este modulo, se aplico las bases de javascript realizando varios
             ejercicios prácticos del lenguaje de programación.
           </p>
+          <a
+            className="certificado"
+            href="https://platzi.com/p/jrdeveloper21/curso/2327-course/diploma/detalle/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -219,6 +287,14 @@ export const SobreMiComponent = () => {
             En este curso seguí profundizando en el lenguaje de programación
             javascript a un nivel intermedio - avanzado.
           </p>
+          <a
+            className="certificado"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-16a72db6-d9d3-4d21-aa14-63c0da5b8755.jpg"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -232,6 +308,14 @@ export const SobreMiComponent = () => {
             En este otro modulo, se comprendio el asincronismo del lenguaje de
             programación de javascript.
           </p>
+          <a
+            className="certificado"
+            href="https://platzi.com/p/jrdeveloper21/curso/1789-course/diploma/detalle/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -242,6 +326,14 @@ export const SobreMiComponent = () => {
             Introducción a API REST <span> - EDteam</span>{" "}
           </h5>
           <p>se aprendio los conceptos teóricos sobre la arquitectura REST.</p>
+          <a
+            className="certificado"
+            href={Certificado3}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -255,6 +347,14 @@ export const SobreMiComponent = () => {
             Se vio conceptos de html y css, conociendo la anatomía de un
             documento html, sus elementos y propiedades de css.
           </p>
+          <a
+            className="certificado"
+            href={Certificado4}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -268,6 +368,14 @@ export const SobreMiComponent = () => {
             En este modulo se aplico lo visto en las bases de frontend
             utilizando tecnologías de html y css.
           </p>
+          <a
+            className="certificado"
+            href={Certificado5}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -282,6 +390,14 @@ export const SobreMiComponent = () => {
             hasta el trabajo con objetos, programación asíncrona y buenas
             prácticas de programación.
           </p>
+          <a
+            className="certificado"
+            href={Certificado6}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -296,6 +412,14 @@ export const SobreMiComponent = () => {
             En este módulo se comprendió el paradigma de programación orientada
             a objetos.
           </p>
+          <a
+            className="certificado"
+            href={Certificado7}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -310,6 +434,14 @@ export const SobreMiComponent = () => {
             javascript. Se adquirió conocimientos desde cero para usar React en
             proyectos prácticos.
           </p>
+          <a
+            className="certificado"
+            href={Certificado8}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
         <div className="timeline-item">
           <div className="tl-icon">
@@ -326,6 +458,14 @@ export const SobreMiComponent = () => {
             proyecto final. El curso tuvo una duracion de 8 semanas con clases
             sincrónicas. En la escuela digital CODERHOUSE 100% online.
           </p>
+          <a
+            className="certificado"
+            href={Certificado9}
+            target="_blank"
+            rel="noreferrer"
+          >
+            Ver certificado
+          </a>
         </div>
       </div>
     </div>
