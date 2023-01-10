@@ -21,7 +21,7 @@ export const ProyectosComponent = () => {
         {/* inicio del contenedor de proyectos */}
         {/* ============================================ */}
         <div className="contenedorDeProyectos">
-          <h2>Proyectos realizados con html, css y bootstrap</h2>
+          <h2>html, css y bootstrap</h2>
           <div className="proyectos">
             <div className="proyecto-item">
               <div className="proyecto-imagen1"></div>
@@ -56,7 +56,7 @@ export const ProyectosComponent = () => {
         {/* inicio del contenedor de proyectos en html, css y javascript */}
 
         <div className="contenedorDeProyectos">
-          <h2>Proyectos realizados con html, css, Bootstrap y javascript</h2>
+          <h2>html, css, Bootstrap y javascript</h2>
           <div className="proyectos">
             <div className="proyecto-item">
               <div className="proyecto-imagen2"></div>
@@ -114,7 +114,7 @@ export const ProyectosComponent = () => {
         {/* Inicio del contenedor de proyectos realizados con React.js */}
 
         <div className="contenedorDeProyectos">
-          <h2>Proyectos realizados con React.js</h2>
+          <h2>React.js</h2>
           <div className="proyectos">
             <div className="proyecto-item">
               <div className="proyecto-imagen4"></div>

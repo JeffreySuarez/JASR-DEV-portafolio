@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+import { ContactComponent } from "../components/contactComponent/ContactComponent";
 const Contact = () => {
   return (
     <ContainerContact>
-      <h1>Contact</h1>
+      <ContactComponent />
     </ContainerContact>
   );
 };
