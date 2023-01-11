@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   align-items: center;
 }
 
@@ -44,6 +43,7 @@
 }
 .contenido-info .subcontenido p {
   color: #d7dae3;
+  font-size: 15px;
 }
 
 .contenido-formulario {
@@ -85,6 +85,7 @@
   width: 100%;
   padding: 20px;
   border-radius: 10px;
+  font-size: 15px;
 }
 
 .contenido_input_texarea {
@@ -100,6 +101,7 @@
   border: transparent;
   color: #d7dae3;
   padding: 20px;
+  font-size: 15px;
 }
 
 .contenido-boton {
@@ -109,10 +111,12 @@
 }
 
 .contenido-boton button {
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 10px 30px;
+  font-size: 15px;
   border-radius: 10px;
   background-color: #ff7e00;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  color: #d7dae3;
 }

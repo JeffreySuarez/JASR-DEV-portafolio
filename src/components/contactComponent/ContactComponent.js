@@ -11,7 +11,9 @@ import emailjs from "@emailjs/browser";
 export const ContactComponent = () => {
   return (
     <div className="div-form">
-      <h1 className="titulo-form">Contáctame</h1>
+      <h1 className="titulo-form">
+        Ponte en <span>Contácto</span>
+      </h1>
       <div className="contenedor-principal">
         <div className="contenido-info">
           <div className="subcontenido">
@@ -30,9 +32,9 @@ export const ContactComponent = () => {
         <div className="contenido-formulario">
           <Formik
             initialValues={{
-              name_input: "Registra su nombre",
+              name_input: "Ingresa su nombre",
               email_input: "ejemplo@ejemplo.com",
-              message_input: "Ingresa el mensaje",
+              message_input: "Escribe el mensaje",
             }}
             onSubmit={(values, { resetForm }) => {
               console.log("Formulario Enviado");
@@ -115,8 +117,8 @@ export const ContactComponent = () => {
                       type="text"
                       name="message_input"
                       id="message_input"
-                      cols="91"
-                      rows="15"
+                      cols="82"
+                      rows="11"
                       placeholder="Ingresa su mensaje."
                       value={values.message_input}
                       onChange={handleChange}
