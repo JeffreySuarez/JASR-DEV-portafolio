@@ -5,7 +5,7 @@ import Document from "../../../assets/doc/CVjeffrey.pdf";
 const CV = () => {
   return (
     <Button>
-      <a href={Document} target="_blank">
+      <a href={Document} target="_blank" rel="noreferrer">
         DOWNLOAD CV
       </a>
     </Button>
