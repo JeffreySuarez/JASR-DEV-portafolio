@@ -1,4 +1,5 @@
 import "./ContactComponent.css";
+import React, { useState } from "react";
 
 /*=====================================================*/
 //Importamos la libreria para armar el formulario formik
@@ -9,6 +10,8 @@ import { Formik } from "formik";
 import emailjs from "@emailjs/browser";
 
 export const ContactComponent = () => {
+  const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+
   return (
     <div className="div-form">
       <h1 className="titulo-form">
@@ -31,17 +34,66 @@ export const ContactComponent = () => {
         </div>
         <div className="contenido-formulario">
           <Formik
+            // configuracion de valores iniciales predeterminados
+            // =========================================================================
             initialValues={{
-              name_input: "Ingresa su nombre",
-              email_input: "ejemplo@ejemplo.com",
-              message_input: "Escribe el mensaje",
+              nombre: "",
+              correo: "",
+              mensaje: "",
             }}
+            // fin de configuracion de valores predeterminados
+            // ==================================================================
+
+            // inicio para validar formulario
+
+            // ====================================================================
+
+            validate={(valores) => {
+              let errores = {};
+
+              // validacion nombre
+              if (!valores.nombre) {
+                errores.nombre = "¡por favor ingresa un texto!";
+              } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(valores.nombre)) {
+                errores.nombre =
+                  "¡el nombre solo puede contener letras y espacios!";
+              }
+
+              // validacion correo
+
+              if (!valores.correo) {
+                errores.correo = "¡por favor ingresa un correo electrónico!";
+              } else if (
+                !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+                  valores.correo
+                )
+              ) {
+                errores.correo =
+                  "¡el correo electronico solo debe contener letras, número, puntos, guiones y guión bajo!";
+              }
+
+              if (!valores.mensaje) {
+                errores.mensaje =
+                  "¡por wfavor ingresa contenido en el mensaje!";
+              }
+
+              return errores;
+            }}
+            // ===============================FIN========================================
+
+            // inicio para el envio del formulario, dentro de el esta el envio de correo
+            // ============================================================================
             onSubmit={(values, { resetForm }) => {
               console.log("Formulario Enviado");
               console.log(values);
+              cambiarFormularioEnviado(true);
+              setTimeout(() => {
+                cambiarFormularioEnviado(false);
+              }, 4000);
+
+              // reinicio del formulario al enviarlo
               resetForm();
 
-              /*===================================================================*/
               // utilizamos emailjs  Envio mensaje al correo.
               /* el send tiene 4 parametros:
               1.) Es el servicio se encuentra en la pagina emailjs. service_4lalpx5
@@ -62,72 +114,100 @@ export const ContactComponent = () => {
                   "service_4lalpx5",
                   "template_nux5q41",
                   {
-                    name_input: values.name_input,
-                    email_input: values.email_input,
-                    message_input: values.message_input,
+                    nombre: values.nombre,
+                    correo: values.correo,
+                    mensaje: values.mensaje,
                   },
                   "c3n7CcXg8nLcIrnv_"
                 )
                 .then((response) => console.log(response))
                 .catch((error) => console.log(error));
               // fin configuracion envio de mensaje correo
-              /*==============================================================================*/
             }}
           >
-            {({ handleSubmit, values, handleChange, handleBlur }) => (
+            {({
+              handleSubmit,
+              values,
+              handleChange,
+              handleBlur,
+              errors,
+              touched,
+            }) => (
               <form action="" className="form-mail" onSubmit={handleSubmit}>
+                {console.log(errors)}
                 {/* input name */}
                 <div className="contenido-input-principal">
                   <div className="contenido_input">
-                    <label htmlFor="name_input">
+                    <label htmlFor="nombre">
                       <input
                         type="text"
-                        name="name_input"
-                        id="name_input"
+                        name="nombre"
+                        id="nombre"
                         placeholder="Ingresa su nombre"
-                        value={values.name_input}
+                        value={values.nombre}
                         onChange={handleChange}
                         onBlur={handleBlur}
                       />
                     </label>
+                    <p className="contenido-error">
+                      {touched.nombre && errors.nombre && (
+                        <div className="error">{errors.nombre}</div>
+                      )}
+                    </p>
                   </div>
 
                   {/* input email */}
                   <div className="contenido_input">
-                    <label htmlFor="email_input">
+                    <label htmlFor="correo">
                       {" "}
                       <input
                         type="email"
-                        name="email_input"
-                        id="email_input"
+                        name="correo"
+                        id="correo"
                         placeholder="ejemplo@ejemplo.com"
-                        value={values.email_input}
+                        value={values.correo}
                         onChange={handleChange}
                         onBlur={handleBlur}
                       />
                     </label>
+                    <p className="contenido-error">
+                      {touched.correo && errors.correo && (
+                        <div className="error">{errors.correo}</div>
+                      )}
+                    </p>
                   </div>
                 </div>
 
                 {/* input message */}
                 <div className="contenido_input_texarea">
-                  <label htmlFor="message_input">
+                  <label htmlFor="mensaje">
                     {" "}
                     <textarea
                       type="text"
-                      name="message_input"
-                      id="message_input"
-                      cols="82"
-                      rows="11"
+                      name="mensaje"
+                      id="mensaje"
+                      cols="87"
+                      rows="8"
                       placeholder="Ingresa su mensaje."
-                      value={values.message_input}
+                      value={values.mensaje}
                       onChange={handleChange}
                       onBlur={handleBlur}
                     ></textarea>
+                    {touched.mensaje && errors.mensaje && (
+                      <div className="error">{errors.mensaje}</div>
+                    )}
                   </label>
                 </div>
                 <div className="contenido-boton">
-                  <button type="submit">Enviar</button>
+                  <button type="submit">
+                    Enviar <i class="far fa-paper-plane"></i>
+                  </button>
+                  <p className="contenido-error">
+                    {/* realizamos el mensaje de envio de formulario */}
+                    {formularioEnviado && (
+                      <p className="exito">Mensaje enviado con éxito</p>
+                    )}
+                  </p>
                 </div>
               </form>
             )}

@@ -21,7 +21,8 @@ const Footer = () => {
           </Icono>
         </a>
         <a
-          href="https://www.linkedin.com/in/jeffrey-alexander-suarez-rey-9bb8046b"
+          href="https://www.linkedin.com/in/jeffreysuarezrey
+          "
           target="_blank"
           rel="noreferrer"
         >
