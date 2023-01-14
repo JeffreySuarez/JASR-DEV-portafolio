@@ -61,7 +61,7 @@ export const ProyectosComponent = () => {
             <div className="proyecto-item">
               <div className="proyecto-imagen2"></div>
               <div className="hover-proyecto-item">
-                <h3>Proyecto</h3>
+                <h3>Desarrollo Aplicaciones IoT</h3>
                 <div className="proyecto-icons">
                   <a
                     href="https://github.com/JeffreySuarez/Project-with-html-css-bootstrap-and-javascript/tree/main/js"
@@ -86,7 +86,7 @@ export const ProyectosComponent = () => {
               <div className="proyecto-imagen3"></div>
 
               <div className="hover-proyecto-item">
-                <h3>Proyecto</h3>
+                <h3>Portafolio</h3>
                 <div className="proyecto-icons">
                   <a
                     href="https://github.com/JeffreySuarez/My-Portfolio"
@@ -114,13 +114,13 @@ export const ProyectosComponent = () => {
         {/* Inicio del contenedor de proyectos realizados con React.js */}
 
         <div className="contenedorDeProyectos">
-          <h2>React.js</h2>
+          <h2>React.js y Firebase</h2>
           <div className="proyectos">
             <div className="proyecto-item">
               <div className="proyecto-imagen4"></div>
 
               <div className="hover-proyecto-item">
-                <h3>Proyecto</h3>
+                <h3>e-commerce Películas</h3>
                 <div className="proyecto-icons">
                   <a
                     href="https://github.com/JeffreySuarez/CODERFILM"

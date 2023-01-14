@@ -16,19 +16,21 @@ export const HomeComponent = () => {
           <br />
           <p className="nombreProfesion">Desarrollador Web FrontEnd</p>
           <br />
-          <p>
+          <p className="parrafo">
             Especializado en el lenguaje de programación JavaScript y React js.
             Soy una persona totalmente autodidacta, siempre buscando en adquirir
             y mejorar mis habilidades en la programación.
           </p>
           <br />
-          <p>
+          <p className="parrafo">
             Puedes echar un vistazo a la pagina de proyectos y observar mis
             trabajos.
           </p>
           <br />
           <br />
-          <p>También me puedes encontrar en mis redes sociales.</p>
+          <p className="parrafo">
+            También me puedes encontrar en mis redes sociales.
+          </p>
           <ContainerIconos>
             <a
               href="https://www.facebook.com/jeffrey.suarez.9849"

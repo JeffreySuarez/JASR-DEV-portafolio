@@ -55,6 +55,9 @@ span {
 p {
   font-size: 20px;
   letter-spacing: 1px;
+}
+
+.parrafo {
   text-align: justify;
 }
 
@@ -62,6 +65,10 @@ p {
   .contenido-imagen {
     width: 300px;
     height: 300px;
+  }
+
+  .textoHome .nombre {
+    text-align: left;
   }
 }
 
@@ -73,8 +80,9 @@ p {
   .nombreProfesion {
     font-size: 30px;
   }
-  .nombre {
+  .textoHome .nombre {
     font-size: 40px;
+    text-align: left;
   }
 }
 
