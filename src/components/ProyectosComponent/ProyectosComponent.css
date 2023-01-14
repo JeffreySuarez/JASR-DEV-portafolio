@@ -185,32 +185,32 @@
   background-color: white;
 }
 
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
   .proyectos {
     grid-template-columns: 1fr;
   }
 
   .proyecto-imagen1 {
-    height: 150px;
+    height: 180px;
   }
 
   .proyecto-imagen2 {
-    height: 150px;
+    height: 180px;
   }
 
   .proyecto-imagen3 {
-    height: 150px;
+    height: 180px;
   }
   .proyecto-imagen4 {
-    height: 150px;
+    height: 180px;
   }
   .proyecto-imagen5 {
-    height: 150pxpx;
+    height: 180pxpx;
   }
   .proyecto-imagen6 {
-    height: 150px;
+    height: 180px;
   }
-}
+} */
 @media (max-width: 600px) {
   .proyectos {
     grid-template-columns: 1fr;
@@ -221,20 +221,20 @@
   }
 
   .proyecto-imagen2 {
-    height: 150px;
+    height: 200px;
   }
 
   .proyecto-imagen3 {
-    height: 150px;
+    height: 200px;
   }
   .proyecto-imagen4 {
-    height: 150px;
+    height: 200px;
   }
   .proyecto-imagen5 {
-    height: 150px;
+    height: 200px;
   }
   .proyecto-imagen6 {
-    height: 150px;
+    height: 200px;
   }
 }
 
