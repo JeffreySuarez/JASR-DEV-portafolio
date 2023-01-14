@@ -33,7 +33,9 @@ const ContainerHeader = styled.div`
   /* background-color: #202020; */
   background-color: #060608;
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (max-width: 450px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 `;
 

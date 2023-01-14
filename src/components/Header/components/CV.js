@@ -26,6 +26,11 @@ const Button = styled.button`
     color: #d7dae3;
     font-weight: bold;
   }
+
+  @media (max-width: 600px) {
+    padding: 5px 10px 5px 10px;
+    font-size: 18px;
+  }
 `;
 
 export default CV;

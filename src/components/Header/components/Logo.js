@@ -19,6 +19,10 @@ const Titulo = styled.h1`
   margin: 0px;
   padding: 0px;
   font-size: 30px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 25px;
+  }
 `;
 
 const Span = styled.span`
