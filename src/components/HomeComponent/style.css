@@ -55,24 +55,39 @@ span {
 p {
   font-size: 20px;
   letter-spacing: 1px;
+  text-align: justify;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .contenido-imagen {
     width: 300px;
     height: 300px;
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 768px) {
   .contenido-imagen {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
   }
   .nombreProfesion {
     font-size: 30px;
   }
   .nombre {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contenedorHome {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .contenedorHome {
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -94,6 +94,13 @@ const ContainerIconos = styled.div`
   a {
     text-decoration: none;
   }
+
+  @media (max-width: 600px) {
+    justify-content: center;
+  }
+  @media (max-width: 700px) {
+    justify-content: center;
+  }
 `;
 const Icono = styled.button`
   width: 60px;
