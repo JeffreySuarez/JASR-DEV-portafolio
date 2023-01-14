@@ -26,28 +26,49 @@ const ContainerHeader = styled.div`
   padding: 20px;
   align-items: center;
   position: fixed;
+  justify-content: space-between;
 
   left: -1px;
   z-index: 99;
   /* background-color: #202020; */
   background-color: #060608;
+
+  @media only screen and (min-width: 992px) {
+  }
 `;
 
 const ContainerLogo = styled.div`
   display: flex;
   align-items: center;
-  flex: 0.5;
+  justify-content: space-between;
+  @media only screen and (min-width: 1200px) {
+    flex: 1;
+  }
+  @media only screen and (min-width: 992px) {
+    flex: 1;
+  }
 `;
 const ContainerNavbar = styled.div`
-  flex: 2;
-  @media only screen and (max-width: 1200px) {
+  display: flex;
+  justify-content: center;
+  @media only screen and (min-width: 1200px) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  @media only screen and (min-width: 992px) {
     flex: 1;
   }
 `;
 const ContainerCV = styled.div`
-  flex: 0.5;
   display: flex;
   justify-content: center;
+  @media only screen and (min-width: 1200px) {
+    flex: 1;
+  }
+  @media only screen and (min-width: 992px) {
+    flex: 1;
+  }
 `;
 
 export default Header;

@@ -87,7 +87,6 @@ const ContainerNavbar = styled.div`
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding: 0px 20px;
   }
 
   .active {
@@ -116,6 +115,9 @@ const ContainerNavbar = styled.div`
       .navbarLink {
         display: inline;
         padding: 0px 20px;
+        @media (max-width: 992px) {
+          padding: 0px 10px;
+        }
       }
     }
   }
