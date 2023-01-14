@@ -56,3 +56,23 @@ p {
   font-size: 20px;
   letter-spacing: 1px;
 }
+
+@media (max-width: 1000px) {
+  .contenido-imagen {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contenido-imagen {
+    width: 250px;
+    height: 250px;
+  }
+  .nombreProfesion {
+    font-size: 30px;
+  }
+  .nombre {
+    font-size: 40px;
+  }
+}

@@ -81,6 +81,9 @@
 }
 
 .contenedorI {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 
   background-color: #ff7e00;
@@ -107,7 +110,7 @@
 
 .timeline-item {
   position: relative;
-  left: -27px;
+  /* left: -27px; */
   padding-left: 30px;
   border-left: 2px solid #787680;
   background-color: #37363f;
@@ -187,3 +190,9 @@
 p{
     color: var(--color-grey2);
 } */
+
+@media (max-width: 850px) {
+  .sobreMiParrafo {
+    width: 90%;
+  }
+}

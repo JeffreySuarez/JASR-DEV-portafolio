@@ -40,6 +40,9 @@ const ContainerLogo = styled.div`
 `;
 const ContainerNavbar = styled.div`
   flex: 2;
+  @media only screen and (max-width: 1200px) {
+    flex: 1;
+  }
 `;
 const ContainerCV = styled.div`
   flex: 0.5;
