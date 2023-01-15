@@ -115,6 +115,7 @@ const ContainerNavbar = styled.div`
       .navbarLink {
         display: inline;
         padding: 0px 20px;
+
         @media (max-width: 992px) {
           padding: 0px 10px;
         }
@@ -156,28 +157,24 @@ const ContainerNavbar = styled.div`
 // ahora realizamos la animacion para el menu del burguer
 
 const BgDiv = styled.div`
-
-
   position: absolute;
   background-color: #060608;
   top: -700px;
-  left: -1000px
   width: 100%;
   height: 100%;
   z-index: -1;
   transition: all 0.6s ease-in-out;
 
-  @media(min-width: 768px){
+  @media (min-width: 768px) {
     display: none;
   }
 
   &.activeMenu {
-    border-radius:  0 0 80% 0;
+    border-radius: 0 0 70% 0;
     width: 100%;
-    height: 100vh;
+    height: 550px;
     top: 0;
     left: 0;
- 
   }
 `;
 

@@ -14,9 +14,7 @@ export const ContactComponent = () => {
 
   return (
     <div className="div-form">
-      <h1 className="titulo-form">
-        Ponte en <span>Contácto</span>
-      </h1>
+      <h1 className="titulo-form">Contáctame</h1>
       <div className="contenedor-principal">
         <div className="contenido-info">
           <div className="subcontenido">
@@ -186,7 +184,7 @@ export const ContactComponent = () => {
                       type="text"
                       name="mensaje"
                       id="mensaje"
-                      cols="87"
+                      cols="80"
                       rows="8"
                       placeholder="Ingresa su mensaje."
                       value={values.mensaje}
