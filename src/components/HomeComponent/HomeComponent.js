@@ -102,6 +102,10 @@ const ContainerIconos = styled.div`
   }
   @media (max-width: 700px) {
     justify-content: center;
+    width: 100%;
+    .textoHome {
+      width: 100%;
+    }
   }
 `;
 const Icono = styled.button`

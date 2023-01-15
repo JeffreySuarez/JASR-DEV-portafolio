@@ -36,6 +36,8 @@ const ContainerHeader = styled.div`
   @media only screen and (max-width: 450px) {
     flex-wrap: wrap;
     justify-content: space-around;
+    padding: 20px 0px;
+    left: 0px;
   }
 `;
 
