@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Document from "../../../assets/doc/CVJeffreySuarezRey.pdf";
+import Document from "../../../assets/doc/CVJeffreySuarez - copia.pdf";
 
 const CV = () => {
   return (
